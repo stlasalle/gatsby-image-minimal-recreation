@@ -1,18 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: "gatsby-plugin-image contain example",
+    title: 'gatsby-plugin-image contain example'
   },
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-image',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/'
       },
-      __key: "images",
-    },
-  ],
-};
+      __key: 'images'
+    }
+  ]
+}
